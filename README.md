@@ -1,2 +1,2 @@
-Consists 3 Projects:  
+Consists Project:  
   i) Soccer WorldCup Database
