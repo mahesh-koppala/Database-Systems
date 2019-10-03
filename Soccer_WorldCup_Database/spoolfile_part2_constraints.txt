@@ -1,0 +1,48 @@
+SQL> INSERT INTO COUNTRY VALUES('INDIA','TEN MILLION',3,'MAHESH Koppala');
+INSERT INTO COUNTRY VALUES('INDIA','TEN MILLION',3,'MAHESH Koppala')
+                                   *
+ERROR at line 1:
+ORA-01722: invalid number 
+
+
+SQL> INSERT INTO COUNTRY VALUES('Australia',96325.14,4,'John Smith');
+INSERT INTO COUNTRY VALUES('Australia',96325.14,4,'John Smith')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (MAH.COUNTRY_PK) violated 
+
+
+SQL> INSERT INTO PLAYER_CARDS VALUES('376545',1,2);
+INSERT INTO PLAYER_CARDS VALUES('376545',1,2)
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (MAH.PLAYER_CARDS_FK) violated - parent key not found 
+
+
+SQL> INSERT INTO COUNTRY VALUES(NULL,96325.98,'RAJ KIRAN');
+INSERT INTO COUNTRY VALUES(NULL,96325.98,'RAJ KIRAN')
+            *
+ERROR at line 1:
+ORA-00947: not enough values 
+
+
+SQL> DELETE FROM PLAYERS WHERE Player_id = 354875;
+DELETE FROM PLAYERS WHERE Player_id = 354875
+*
+ERROR at line 1:
+ORA-02292: integrity constraint (MAH.PLAYER_ASSISTS_GOALS_FK) violated - child record found 
+
+
+SQL> INSERT INTO COUNTRY VALUES('INDIA',12365.32,3,'MAHESH Koppala');
+
+1 row created.
+
+SQL> INSERT INTO COUNTRY VALUES('libya',96325.14,4,'John Smith');
+
+1 row created.
+
+SQL> INSERT INTO COUNTRY VALUES('PAK',96325.21,2,'RAHUL KANE');
+
+1 row created.
+
+SQL> spool off;
