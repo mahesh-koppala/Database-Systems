@@ -1,4 +1,4 @@
-Instructor : Ranjan Dash  
+Instructor : Prof.Ranjan Dash  
 
 Consists Project:  
   i) Soccer WorldCup Database  
